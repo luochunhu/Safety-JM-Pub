@@ -1,0 +1,2921 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sys.Safety.Request</name>
+    </assembly>
+    <members>
+        <member name="P:Sys.Safety.Request.AnalysisTemplate.AnalysisTemplateAddRequest.JC_AnalysisTemplateInfo">
+            <summary>
+            逻辑分析模板
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.AnalysisTemplate.AnalysisTemplateAddRequest.AnalysisExpressionInfoList">
+            <summary>
+            表达式
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.AnalysisTemplate.AnalysisTemplateAddRequest.ExpressionConfigInfoList">
+            <summary>
+            表达式配置
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.AnalysisTemplate.AnalysisTemplateAddRequest.JC_AnalysisTemplateConfigInfoList">
+            <summary>
+            分析模板配置表
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.App.RealDataRequest">
+            <summary>
+            实时数据请求参数
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RealDataRequest.CharacterCode">
+            <summary>
+            设备性质编码(交换机为-1)
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RealDataRequest.TypeCode">
+            <summary>
+            种类编号(全部-1)
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RealDataRequest.ModelCode">
+            <summary>
+            设备类型编号(全部-1)
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RealDataRequest.StateCode">
+            <summary>
+            设备状态编号(全部-1)
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RealDataRequest.StateType">
+            <summary>
+            报警类型(全部-1 正常0 异常1)
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.ModifyUserPasswordRequest.UserCode">
+            <summary>
+             用户编码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.ModifyUserPasswordRequest.OldPassWord">
+            <summary>
+            原密码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.ModifyUserPasswordRequest.NewPassWord">
+            <summary>
+            新密码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.ChartGetRequest.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.ChartGetRequest.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.ChartGetRequest.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.GetDayReportRequest.Time">
+            <summary>
+            查询时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RunLogGetRequest.PointID">
+            <summary>
+            测点ID
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RunLogGetRequest.StateionID">
+            <summary>
+            分站ID
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RunLogGetRequest.DevTypeID">
+            <summary>
+            设备种类ID
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RunLogGetRequest.StartTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.RunLogGetRequest.PageSize">
+            <summary>
+            返回记录数
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.PointRunLogGetRequest.PointID">
+            <summary>
+            测点ID
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.PointRunLogGetRequest.STime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.App.PointRunLogGetRequest.ETime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheLoadRequest">
+            <summary>
+            加载广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheAddRequest">
+            <summary>
+            添加广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheAddRequest.BCallInfo">
+            <summary>
+            广播控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheBatchAddRequest">
+            <summary>
+            批量添加广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheBatchAddRequest.BCallInfos">
+            <summary>
+            广播控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheUpdateRequest">
+            <summary>
+            更新广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheUpdateRequest.BCallInfo">
+            <summary>
+            广播控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheBatchUpdateRequest">
+            <summary>
+            批量更新广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheBatchUpdateRequest.BCallInfos">
+            <summary>
+            广播控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheDeleteRequest">
+            <summary>
+            删除广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheDeleteRequest.BCallInfo">
+            <summary>
+            广播控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheBatchDeleteRequest">
+            <summary>
+            批量删除广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheBatchDeleteRequest.BCallInfos">
+            <summary>
+            广播控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheGetAllRequest">
+            <summary>
+            获取所有广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheGetByKeyRequest">
+            <summary>
+            根据Key获取广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheGetByKeyRequest.Id">
+            <summary>
+            广播控制Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheGetByConditionRequest">
+            <summary>
+            根据条件广播控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BCallCacheIsExistsRequest">
+            <summary>
+            是否存在呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.BCallCacheIsExistsRequest.Id">
+            <summary>
+            广播控制Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.UpdatePropertiesRequest">
+            <summary>
+            部分更新测点信息RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.UpdatePropertiesRequest.PointID">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.UpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.BatchUpdatePropertiesRequest">
+            <summary>
+            批量 部分更新测点信息请求
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheLoadRequest">
+            <summary>
+            加载报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheAddRequest">
+            <summary>
+            添加报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheAddRequest.R_PBInfo">
+            <summary>
+            报警缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheBatchAddRequest">
+            <summary>
+            批量添加报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheBatchAddRequest.R_PBInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheUpdateRequest">
+            <summary>
+            修改报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheUpdateRequest.R_PBInfo">
+            <summary>
+            报警缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheBatchUpdateRequest">
+            <summary>
+            批量修改报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheBatchUpdateRequest.R_PBInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheDeleteAllRequest">
+            <summary>
+            删除报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheGetAllRequest">
+            <summary>
+            查询所有报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheGetByKeyRequest">
+            <summary>
+            根据Key查询报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheGetByKeyRequest.Id">
+            <summary>
+            报警缓存Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheGetByConditonRequest">
+            <summary>
+            根据条件查询报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.R_PBCacheStopCleanRequest">
+            <summary>
+            停止清除报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheBatchDeleteRequest.R_PBInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheUpdatePropertiesRequest.R_PBKey">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheUpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.R_PBCacheGetByInfo.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheLoadRequest">
+            <summary>
+            加载区域缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheAddRequest">
+            <summary>
+            添加区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheAddRequest.AreaInfo">
+            <summary>
+            区域缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheBatchAddRequest">
+            <summary>
+            批量添加区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheBatchAddRequest.AreaInfos">
+            <summary>
+            区域缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheUpdateRequest">
+            <summary>
+            更新区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheUpdateRequest.AreaInfo">
+            <summary>
+            区域缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheBatchUpdateRequest">
+            <summary>
+            批量更新区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheBatchUpdateRequest.AreaInfos">
+            <summary>
+            区域缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheDeleteRequest">
+            <summary>
+            删除区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheDeleteRequest.AreaInfo">
+            <summary>
+            区域缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheBatchDeleteRequest">
+            <summary>
+            批量删除区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheBatchDeleteRequest.AreaInfos">
+            <summary>
+            区域缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheGetAllRequest">
+            <summary>
+            获取所有区域缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheGetDefaultRequest">
+            <summary>
+            获取所有默认区域缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheGetByKeyRequest">
+            <summary>
+            根据Key获取区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheGetByKeyRequest.Areaid">
+            <summary>
+            区域Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheGetByConditionRequest">
+            <summary>
+            根据条件区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.AreaCacheIsExistsRequest">
+            <summary>
+            是否存在区域缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.AreaCacheIsExistsRequest.Areaid">
+            <summary>
+            区域Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheLoadRequest">
+            <summary>
+            加载报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheAddRequest">
+            <summary>
+            添加报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheAddRequest.AlarmInfo">
+            <summary>
+            报警缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheBatchAddRequest">
+            <summary>
+            批量添加报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheBatchAddRequest.AlarmInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheUpdateRequest">
+            <summary>
+            修改报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheUpdateRequest.AlarmInfo">
+            <summary>
+            报警缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheBatchUpdateRequest">
+            <summary>
+            批量修改报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheBatchUpdateRequest.AlarmInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheDeleteAllRequest">
+            <summary>
+            删除报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheGetAllRequest">
+            <summary>
+            查询所有报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheGetByKeyRequest">
+            <summary>
+            根据Key查询报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheGetByKeyRequest.Id">
+            <summary>
+            报警缓存Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheGetByStimeRequest.Stime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheGetByConditonRequest">
+            <summary>
+            根据条件查询报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RatioAlarmCacheStopCleanRequest">
+            <summary>
+            停止清除报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheBatchDeleteRequest.AlarmInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheUpdatePropertiesRequest.AlarmKey">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RatioAlarmCacheUpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheLoadRequest">
+            <summary>
+            加载报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheAddRequest">
+            <summary>
+            添加报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheAddRequest.AlarmInfo">
+            <summary>
+            报警缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheBatchAddRequest">
+            <summary>
+            批量添加报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheBatchAddRequest.AlarmInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheUpdateRequest">
+            <summary>
+            修改报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheUpdateRequest.AlarmInfo">
+            <summary>
+            报警缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheBatchUpdateRequest">
+            <summary>
+            批量修改报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheBatchUpdateRequest.AlarmInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheDeleteAllRequest">
+            <summary>
+            删除报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheGetAllRequest">
+            <summary>
+            查询所有报警缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheGetByKeyRequest">
+            <summary>
+            根据Key查询报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheGetByKeyRequest.Id">
+            <summary>
+            报警缓存Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheGetByConditonRequest">
+            <summary>
+            根据条件查询报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AlarmCacheStopCleanRequest">
+            <summary>
+            停止清除报警缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheBatchDeleteRequest.AlarmInfos">
+            <summary>
+            报警集合集合
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheUpdatePropertiesRequest.AlarmKey">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheUpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AlarmCacheGetByInfo.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ConfigCacheLoadRequest">
+            <summary>
+            加载配置缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ConfigCacheUpdateRequest">
+            <summary>
+            修改配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ConfigCacheUpdateRequest.ConfigInfo">
+            <summary>
+            配置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ConfigCacheBatchUpdateRequest">
+            <summary>
+            批量修改配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ConfigCacheBatchUpdateRequest.ConfigInfos">
+            <summary>
+            批量修改配置缓存集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ConfigCacheGetAllRequest">
+            <summary>
+            查询所有配置缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ConfigCacheGetByKeyRequest">
+            <summary>
+            按Key查询配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ConfigCacheGetByKeyRequest.Name">
+            <summary>
+            Key:配置名称
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ConfigCacheGetByConditonRequest">
+            <summary>
+            按条件查询配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ConfigCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceClassCacheLoadRequest">
+            <summary>
+            加载设备种类缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceClassCacheGetAllRequest">
+            <summary>
+            获取所有设备种类缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceClassCacheGetByConditionRequest">
+            <summary>
+            根据条件获取设备种类缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceClassCacheGetByConditionRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceClassCacheGetByDevicePropertyRequest">
+            <summary>
+            根据设备性质获取设备种类缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceClassCacheGetByDevicePropertyRequest.DevicePropertyId">
+            <summary>
+            设备性质Id
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceClassCacheGetByKeyRequest">
+            <summary>
+            根据Key获取设备种类缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceClassCacheGetByKeyRequest.LngEnumValue">
+            <summary>
+            设备种类Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceClassCacheIsExistsRequest">
+            <summary>
+            设备种类缓存是否存在RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceClassCacheIsExistsRequest.LngEnumValue">
+            <summary>
+            设备种类Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheLoadRequest">
+            <summary>
+            加载设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheAddRequest">
+            <summary>
+            添加设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceDefineCacheAddRequest.DeviceDefineInfo">
+            <summary>
+            设备定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheBatchAddRequest">
+            <summary>
+            批量添加设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceDefineCacheBatchAddRequest.DeviceDefineInfos">
+            <summary>
+            设备定义集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheUpdateRequest">
+            <summary>
+            更新设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceDefineCacheUpdateRequest.DeviceDefineInfo">
+            <summary>
+            设备定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheBatchUpdateRequest">
+            <summary>
+            批量更新设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceDefineCacheBatchUpdateRequest.DeviceDefineInfos">
+            <summary>
+            设备定义集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheDeleteRequest">
+            <summary>
+            删除设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceDefineCacheDeleteRequest.DeviceDefineInfo">
+            <summary>
+            设备定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheGetAllRequest">
+            <summary>
+            获取所有设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheGetByKeyRequest">
+             <summary>
+            根据Key获取设备定义缓存RPC
+             </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceDefineCacheGetByKeyRequest.Devid">
+            <summary>
+            设备定义Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceDefineCacheGetByConditonRequest">
+            <summary>
+            根据条件获取设备定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceDefineCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DevicePropertyCacheLoadRequest">
+            <summary>
+            加载设备性质缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DevicePropertyCacheGetAllRequest">
+            <summary>
+            获取所有设备性质缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DevicePropertyCacheGetByConditionRequest">
+            <summary>
+            根据条件获取设备性质缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DevicePropertyCacheGetByConditionRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DevicePropertyCacheGetByKeyRequest">
+            <summary>
+            根据Key获取设备性质缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DevicePropertyCacheGetByKeyRequest.LngEnumValue">
+            <summary>
+            设备性质Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DevicePropertyCacheIsExistsRequest">
+            <summary>
+            设备性质缓存是否存在RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DevicePropertyCacheIsExistsRequest.LngEnumValue">
+            <summary>
+            设备性质Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceTypeCacheLoadRequest">
+            <summary>
+            加载设备型号缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceTypeCacheGetAllRequest">
+            <summary>
+            获取所有设备型号缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceTypeCacheGetByConditionRequest">
+            <summary>
+            根据条件获取设备型号缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceTypeCacheGetByConditionRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceTypeCacheGetByKeyRequest">
+            <summary>
+            根据Key获取设备型号缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceTypeCacheGetByKeyRequest.LngEnumValue">
+            <summary>
+            设备型号Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DeviceTypeCacheIsExistsRequest">
+            <summary>
+            设备型号缓存是否存在RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DeviceTypeCacheIsExistsRequest.LngEnumValue">
+            <summary>
+            设备型号Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheLoadRequest">
+            <summary>
+            加载大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheAddRequest">
+            <summary>
+            添加大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheAddRequest.LargeDataAnalysisConfigInfo">
+            <summary>
+            大数据分析配置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheBatchAddRequest">
+            <summary>
+            批量添加大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheBatchAddRequest.LargeDataAnalysisConfigInfos">
+            <summary>
+            大数据分析配置集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheUpdateRequest">
+            <summary>
+            修改大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheUpdateRequest.LargeDataAnalysisConfigInfo">
+            <summary>
+            大数据分析配置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheBatchUpdateRequest">
+            <summary>
+            批量修改大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheBatchUpdateRequest.LargeDataAnalysisConfigInfos">
+            <summary>
+            大数据分析配置集合集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheDeleteRequest">
+            <summary>
+            删除大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheDeleteRequest.LargeDataAnalysisConfigInfo">
+            <summary>
+            大数据分析配置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheGetAllRequest">
+            <summary>
+            查询所有大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheGetByKeyRequest">
+            <summary>
+            根据Key查询大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheGetByKeyRequest.Id">
+            <summary>
+            大数据分析配置缓存Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheGetByConditonRequest">
+            <summary>
+            根据条件查询大数据分析配置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.LargeDataAnalysisConfigCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheLoadRequest">
+            <summary>
+            加载手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheAddRequest">
+            <summary>
+            添加手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheAddRequest.ManualCrossControlInfo">
+            <summary>
+            手动交叉控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheBatchAddRequest">
+            <summary>
+            批量添加手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheBatchAddRequest.ManualCrossControlInfos">
+            <summary>
+            手动交叉控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheUpdateRequest">
+            <summary>
+            更新手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheUpdateRequest.ManualCrossControlInfo">
+            <summary>
+            手动交叉控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheBatchUpdateRequest">
+            <summary>
+            批量更新手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheBatchUpdateRequest.ManualCrossControlInfos">
+            <summary>
+            手动交叉控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheDeleteRequest">
+            <summary>
+            删除手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheDeleteRequest.ManualCrossControlInfo">
+            <summary>
+            手动交叉控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheBatchDeleteRequest">
+            <summary>
+            批量删除手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheBatchDeleteRequest.ManualCrossControlInfos">
+            <summary>
+            手动交叉控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheGetAllRequest">
+            <summary>
+            获取所有手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheGetByKeyRequest">
+            <summary>
+            根据Key获取手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheGetByKeyRequest.ManualCrosControlId">
+            <summary>
+            手动交叉控制Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheGetByConditionRequest">
+            <summary>
+            根据条件手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ManualCrossControlCacheIsExistsRequest">
+            <summary>
+            是否存在手动交叉控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ManualCrossControlCacheIsExistsRequest.ManualCrosControlId">
+            <summary>
+            手动交叉控制Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheLoadRequest">
+            <summary>
+            加载网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheAddRequest">
+            <summary>
+            添加网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.NetworkModuleCacheAddRequest.NetworkModuleInfo">
+            <summary>
+            网络模块
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheBatchAddRequest">
+            <summary>
+            批量添加网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.NetworkModuleCacheBatchAddRequest.NetworkModuleInfos">
+            <summary>
+            网络模块集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheUpdateRequest">
+            <summary>
+            更新网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.NetworkModuleCacheUpdateRequest.NetworkModuleInfo">
+            <summary>
+            网络模块
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheBatchUpdateRequest">
+            <summary>
+            批量更新网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.NetworkModuleCacheBatchUpdateRequest.NetworkModuleInfos">
+            <summary>
+            网络模块集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheDeleteRequest">
+            <summary>
+            删除网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.NetworkModuleCacheDeleteRequest.NetworkModuleInfo">
+            <summary>
+            网络模块
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheGetAllRequest">
+            <summary>
+            获取所有网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheGetByKeyRequest">
+             <summary>
+            根据Key获取网络模块缓存RPC
+             </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.NetworkModuleCacheGetByKeyRequest.Mac">
+            <summary>
+            网络模块Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.NetworkModuleCacheGetByConditonRequest">
+            <summary>
+            根据条件获取网络模块缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.NetworkModuleCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheLoadRequest">
+            <summary>
+            加载测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheAddRequest">
+            <summary>
+            添加测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheAddRequest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheBatchAddRequest">
+            <summary>
+            批量添加测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheBatchAddRequest.PointDefineInfos">
+            <summary>
+            测点定义集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateRequest">
+            <summary>
+            更新测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateRequest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheBatchUpdateRequest">
+            <summary>
+            批量更新测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheBatchUpdateRequest.PointDefineInfos">
+            <summary>
+            测点定义集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheDeleteRequest">
+            <summary>
+            删除测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheDeleteRequest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheBatchDeleteRequest">
+            <summary>
+            批量删除测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheBatchDeleteRequest.PointDefineInfos">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.QueryPointRequest">
+            <summary>
+            测点缓存查询请求基类
+            added by  20170719
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.QueryPointRequest.IsQueryFromWriteCache">
+            <summary>
+            是否从写缓存读取数据(默认从只读缓存读取)
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheGetAllRequest">
+            <summary>
+            获取所有测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheGetByKeyRequest">
+             <summary>
+            根据测点编号获取测点定义缓存RPC
+             </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheGetByKeyRequest.Point">
+            <summary>
+            测点编号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheByPointIdRequeest.PointID">
+            <summary>
+            测点ID
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheGetByConditonRequest">
+            <summary>
+            根据条件获取测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheGetByStationRequest">
+            <summary>
+            根据分站号获取测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheGetByStationRequest.Station">
+            <summary>
+            测点分站号
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateControlReqest">
+            <summary>
+            更新测点定义缓存控制信息RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateControlReqest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateStationFlatReqest">
+            <summary>
+            更新测点定义缓存分站信息RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateStationFlatReqest.IsInit">
+            <summary>
+            是否初始化
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateCommTimesReqest">
+            <summary>
+            更新测点定义缓存通讯次数RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateCommTimesReqest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateCommTimesReqest.UpdateType">
+            <summary>
+            更新通讯类类型 0:更新NComTest_TotalCount和NCommCount 1:更新NComTest_TotalCount 2:更新NCommCount
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateUniqueCodeReqest">
+            <summary>
+            更新测点定义缓存唯一编码RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateUniqueCodeReqest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateInitInfoReqest">
+            <summary>
+            更新测点定义缓存初始化信息RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateInitInfoReqest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateErrorCountReqest">
+            <summary>
+            更新测点定义缓存错误次数RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateErrorCountReqest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PointDefineCacheUpdateRealValueReqest">
+            <summary>
+            更新测点定义实时信息数RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PointDefineCacheUpdateRealValueReqest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DefineCacheUpdatePropertiesRequest">
+            <summary>
+            部分更新测点信息RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DefineCacheUpdatePropertiesRequest.PointID">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.DefineCacheUpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.DefineCacheBatchUpdatePropertiesRequest">
+            <summary>
+            批量 部分更新测点信息请求
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositonCacheLoadRequest">
+            <summary>
+            加载安装位置缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheAddRequest">
+            <summary>
+            添加安装位置缓存
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheAddRequest.PositionInfo">
+            <summary>
+            安装位置
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheBatchAddRequest">
+            <summary>
+            批量添加安装位置缓存
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheBatchAddRequest.PositionInfos">
+            <summary>
+            安装位置集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheUpdateRequest">
+            <summary>
+            更新安装位置缓存
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheUpdateRequest.PositionInfo">
+            <summary>
+            安装位置
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheDeleteRequest.PositionInfo">
+            <summary>
+            安装位置
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheBatchUpdateRequest">
+            <summary>
+            批量更新安装位置缓存
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheBatchUpdateRequest.PositionInfos">
+            <summary>
+            安装位置集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheGetAllRequest">
+            <summary>
+            获取所有安装位置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheGetByKeyRequest">
+            <summary>
+            根据Key获取安装位置缓存
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheGetByKeyRequest.PositionId">
+            <summary>
+            位置Id
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheGetByConditionRequest">
+            <summary>
+            根据条件获取安装位置缓存
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheIsExistsRequest">
+            <summary>
+            安装位置缓存是否存在
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.PositionCacheIsExistsRequest.PositionId">
+            <summary>
+            位置id
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.PositionCacheGetMaxIdRequest">
+            <summary>
+            获取安装位置缓存最大Id
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheAddRequest">
+            <summary>
+            添加自动挂接设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheAddRequest.AutomaticArticulatedDeviceInfo">
+            <summary>
+            自动挂接设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheUpdateRequest">
+            <summary>
+            更新自动挂接设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheUpdateRequest.AutomaticArticulatedDeviceInfo">
+            <summary>
+            自动挂接设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheDeleteRequest">
+            <summary>
+            删除自动挂接设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheDeleteRequest.AutomaticArticulatedDeviceInfo">
+            <summary>
+            自动挂接设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheGetAllRequest">
+            <summary>
+            获取所有自动挂接设备缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheGetByKeyRequest">
+            <summary>
+            根据Key获取自动挂接设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheGetByKeyRequest.AutomaticArticulatedDeviceId">
+            <summary>
+            自动挂接设备Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheGetByConditionRequest">
+            <summary>
+            根据条件获取自动挂接设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.AutomaticArticulatedDeviceCacheGetByConditionRequest.Pridicate">
+            <summary>
+            自动挂接设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheAddRequest">
+            <summary>
+            添加运行日志缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RunLogCacheAddRequest.RunLogInfo">
+            <summary>
+            运行日志缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheBatchAddRequest">
+            <summary>
+            批量添加运行日志缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RunLogCacheBatchAddRequest.RunLogInfos">
+            <summary>
+            运行日志缓存集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheUpdateRequest">
+            <summary>
+            更新运行日志缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RunLogCacheUpdateRequest.RunLogInfo">
+            <summary>
+            运行日志缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheBatchUpdateRequest">
+            <summary>
+            批量更新运行日志缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RunLogCacheBatchUpdateRequest.RunLogInfos">
+            <summary>
+            运行日志缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheGetAllRequest">
+            <summary>
+            获取所有运行日志缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheGetByKeyRequest">
+            <summary>
+            根据Key获取运行日志缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RunLogCacheGetByKeyRequest.RunLogId">
+            <summary>
+            运行日志Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheGetByConditionRequest">
+            <summary>
+            根据条件获取运行日志缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RunLogCacheGetByConditionRequest.Pridicate">
+            <summary>
+            运行日志缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.RunLogCacheStopCleanRunLogRequest">
+            <summary>
+            停止清除运行日志线程RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.RunLogBatchDeleteRequest.RunLogInfos">
+            <summary>
+            运行日志缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.SettingCacheLoadRequest">
+            <summary>
+            加载设置缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.SettingCacheAddRequest">
+            <summary>
+            添加设置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.SettingCacheAddRequest.SettingInfo">
+            <summary>
+            设置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.SettingCacheUpdateRequest">
+            <summary>
+            修改设置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.SettingCacheUpdateRequest.SettingInfo">
+            <summary>
+            设置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.ConfigCacheAddOrUpdateRequest">
+            <summary>
+            添加或修改设置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.ConfigCacheAddOrUpdateRequest.SettingInfo">
+            <summary>
+            设置缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.SettingCacheGetAllRequest">
+            <summary>
+            查询所有设置缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.SettingCacheGetByKeyRequest">
+            <summary>
+            按Key查询设置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.SettingCacheGetByKeyRequest.StrKey">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Cache.SettingCacheGetByConditonRequest">
+            <summary>
+            按条件查询设置缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Cache.SettingCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Chart.GetFiveMiniteLineRequest.IsQueryByPoint">
+            <summary>
+            是否只按测点号查询（将同一天内删除前和删除后的记录都查询出来）
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Chart.GetMcDataRequest.IsQueryByPoint">
+            <summary>
+            是否只按测点号查询（将同一天内删除前和删除后的记录都查询出来）
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Chart.GetStateBarTableResponse.TjTxt">
+            <summary>
+            统计信息
+            </summary>       
+        </member>
+        <member name="P:Sys.Safety.Request.Chart.GetStateBarTableResponse.dtBarStateChg">
+            <summary>
+            状态变化柱状图数据
+            </summary>       
+        </member>
+        <member name="P:Sys.Safety.Request.Chart.GetStateBarTableResponse.dtTotal">
+            <summary>
+            状态统计列表数据
+            </summary>       
+        </member>
+        <member name="P:Sys.Safety.Request.Chart.GetStateBarTableResponse.dtBarHourTj">
+            <summary>
+            小时开机率统计柱状图数据
+            </summary>       
+        </member>
+        <member name="T:Sys.Safety.Request.DataToDb.DataToDbAddRequest`1">
+            <summary>
+            添加入库列表RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.DataToDb.DataToDbAddRequest`1.Item">
+            <summary>
+            入库对象
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.DataToDb.DataToDbBatchAddRequest`1">
+            <summary>
+            批量添加入库列表RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.DataToDb.DataToDbBatchAddRequest`1.Items">
+            <summary>
+            入库对象集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.DataToDb.DataToDbStartRequest">
+            <summary>
+            开始入库线程RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.DataToDb.DataToDbStopRequest">
+            <summary>
+            停止入库线程RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheLoadRequest">
+            <summary>
+            加载人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheAddRequest">
+            <summary>
+            添加人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheAddRequest.RPersoninfInfo">
+            <summary>
+            人员基本信息缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheBatchAddRequest">
+            <summary>
+            批量添加人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheBatchAddRequest.RPersoninfInfos">
+            <summary>
+            人员基本信息缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheUpdateRequest">
+            <summary>
+            更新人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheUpdateRequest.RPersoninfInfo">
+            <summary>
+            人员基本信息缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheBatchUpdateRequest">
+            <summary>
+            批量更新人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheBatchUpdateRequest.RPersoninfInfos">
+            <summary>
+            人员基本信息缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheDeleteRequest">
+            <summary>
+            删除人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheDeleteRequest.RPersoninfInfo">
+            <summary>
+            人员基本信息缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheBatchDeleteRequest">
+            <summary>
+            批量删除人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheBatchDeleteRequest.RPersoninfInfos">
+            <summary>
+            人员基本信息缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheGetAllRequest">
+            <summary>
+            获取所有人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheGetByKeyRequest">
+            <summary>
+            根据Key获取人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheGetByKeyRequest.Id">
+            <summary>
+            人员基本信息Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheGetByConditionRequest">
+            <summary>
+            根据条件人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPersoninfCacheIsExistsRequest">
+            <summary>
+            是否存在人员基本信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPersoninfCacheIsExistsRequest.Id">
+            <summary>
+            人员基本信息Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheLoadRequest">
+            <summary>
+            加载未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheAddRequest">
+            <summary>
+            添加未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheAddRequest.RUndefinedDefInfo">
+            <summary>
+            未定义设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheBatchAddRequest">
+            <summary>
+            批量添加未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheBatchAddRequest.RUndefinedDefInfos">
+            <summary>
+            未定义设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheUpdateRequest">
+            <summary>
+            更新未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheUpdateRequest.RUndefinedDefInfo">
+            <summary>
+            未定义设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheBatchUpdateRequest">
+            <summary>
+            批量更新未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheBatchUpdateRequest.RUndefinedDefInfos">
+            <summary>
+            未定义设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheDeleteRequest">
+            <summary>
+            删除未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheDeleteRequest.RUndefinedDefInfo">
+            <summary>
+            未定义设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheBatchDeleteRequest">
+            <summary>
+            批量删除未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheBatchDeleteRequest.RUndefinedDefInfos">
+            <summary>
+            未定义设备缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheGetAllRequest">
+            <summary>
+            获取所有未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheGetByKeyRequest">
+            <summary>
+            根据Key获取未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheGetByKeyRequest.Id">
+            <summary>
+            未定义设备Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheGetByConditionRequest">
+            <summary>
+            根据条件未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RUndefinedDefCacheIsExistsRequest">
+            <summary>
+            是否存在未定义设备缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RUndefinedDefCacheIsExistsRequest.Id">
+            <summary>
+            未定义设备Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheLoadRequest">
+            <summary>
+            加载班次缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheAddRequest">
+            <summary>
+            添加班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheAddRequest.RKqbcInfo">
+            <summary>
+            班次缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheBatchAddRequest">
+            <summary>
+            批量添加班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheBatchAddRequest.RKqbcInfos">
+            <summary>
+            班次缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheUpdateRequest">
+            <summary>
+            更新班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheUpdateRequest.RKqbcInfo">
+            <summary>
+            班次缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheBatchUpdateRequest">
+            <summary>
+            批量更新班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheBatchUpdateRequest.RKqbcInfos">
+            <summary>
+            班次缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheDeleteRequest">
+            <summary>
+            删除班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheDeleteRequest.RKqbcInfo">
+            <summary>
+            班次缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheBatchDeleteRequest">
+            <summary>
+            批量删除班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheBatchDeleteRequest.RKqbcInfos">
+            <summary>
+            班次缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheGetAllRequest">
+            <summary>
+            获取所有班次缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheGetDefaultRequest">
+            <summary>
+            获取所有默认班次缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheGetByKeyRequest">
+            <summary>
+            根据Key获取班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheGetByKeyRequest.Bcid">
+            <summary>
+            班次Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheGetByConditionRequest">
+            <summary>
+            根据条件班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RKqbcCacheIsExistsRequest">
+            <summary>
+            是否存在班次缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RKqbcCacheIsExistsRequest.Bcid">
+            <summary>
+            班次Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheLoadRequest">
+            <summary>
+            加载呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheAddRequest">
+            <summary>
+            添加呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheAddRequest.RCallInfo">
+            <summary>
+            呼叫控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheBatchAddRequest">
+            <summary>
+            批量添加呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheBatchAddRequest.RCallInfos">
+            <summary>
+            呼叫控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheUpdateRequest">
+            <summary>
+            更新呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheUpdateRequest.RCallInfo">
+            <summary>
+            呼叫控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheBatchUpdateRequest">
+            <summary>
+            批量更新呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheBatchUpdateRequest.RCallInfos">
+            <summary>
+            呼叫控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheDeleteRequest">
+            <summary>
+            删除呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheDeleteRequest.RCallInfo">
+            <summary>
+            呼叫控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheBatchDeleteRequest">
+            <summary>
+            批量删除呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheBatchDeleteRequest.RCallInfos">
+            <summary>
+            呼叫控制缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheGetAllRequest">
+            <summary>
+            获取所有呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheGetByKeyRequest">
+            <summary>
+            根据Key获取呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheGetByKeyRequest.Id">
+            <summary>
+            呼叫控制Key
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheGetByConditionRequest">
+            <summary>
+            根据条件呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheGetByConditionRequest.Predicate">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RCallCacheIsExistsRequest">
+            <summary>
+            是否存在呼叫控制缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallCacheIsExistsRequest.Id">
+            <summary>
+            呼叫控制Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallInfoGetByMasterIDRequest.MasterId">
+            <summary>主控id
+            
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallInfoGetByMasterIDRequest.CallType">
+            <summary>呼叫类型
+            
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallInfoGetByMasterIDRequest.Type">
+            <summary>类型
+            
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RCallInfoGetByMasterIDRequest.IsQueryByType">
+            <summary>是否根据类型查询
+            
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheLoadRequest">
+            <summary>
+            加载测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheAddRequest">
+            <summary>
+            添加测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheAddRequest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheBatchAddRequest">
+            <summary>
+            批量添加测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheBatchAddRequest.PointDefineInfos">
+            <summary>
+            测点定义集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheUpdateRequest">
+            <summary>
+            更新测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheUpdateRequest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheBatchUpdateRequest">
+            <summary>
+            批量更新测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheBatchUpdateRequest.PointDefineInfos">
+            <summary>
+            测点定义集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheDeleteRequest">
+            <summary>
+            删除测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheDeleteRequest.PointDefineInfo">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheBatchDeleteRequest">
+            <summary>
+            批量删除测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheBatchDeleteRequest.PointDefineInfos">
+            <summary>
+            测点定义
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.QueryPointRequest">
+            <summary>
+            测点缓存查询请求基类
+            added by  20170719
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.QueryPointRequest.IsQueryFromWriteCache">
+            <summary>
+            是否从写缓存读取数据(默认从只读缓存读取)
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheGetAllRequest">
+            <summary>
+            获取所有测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheByPointIdRequeest.PointID">
+            <summary>
+            测点ID
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPointDefineCacheGetByConditonRequest">
+            <summary>
+            根据条件获取测点定义缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPointDefineCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RDefineCacheUpdatePropertiesRequest">
+            <summary>
+            部分更新测点信息RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RDefineCacheUpdatePropertiesRequest.PointID">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RDefineCacheUpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RDefineCacheBatchUpdatePropertiesRequest">
+            <summary>
+            批量 部分更新测点信息请求
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPralCacheLoadRequest">
+            <summary>
+            加载实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheAddRequest">
+            <summary>
+            添加实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheAddRequest.PrealInfo">
+            <summary>
+            实时信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheBatchAddRequest">
+            <summary>
+            批量添加实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheBatchAddRequest.PrealInfos">
+            <summary>
+            实时信息集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheUpdateRequest">
+            <summary>
+            更新实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheUpdateRequest.PrealInfo">
+            <summary>
+            实时信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheBatchUpdateRequest">
+            <summary>
+            批量更新实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheBatchUpdateRequest.PrealInfos">
+            <summary>
+            实时信息集合
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheDeleteRequest">
+            <summary>
+            删除实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheDeleteRequest.PrealInfo">
+            <summary>
+            实时信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheBatchDeleteRequest">
+            <summary>
+            批量删除实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheBatchDeleteRequest.PrealInfos">
+            <summary>
+            实时信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.QueryRealRequest">
+            <summary>
+            测点缓存查询请求基类
+            added by  20170719
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.QueryRealRequest.IsQueryFromWriteCache">
+            <summary>
+            是否从写缓存读取数据(默认从只读缓存读取)
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheGetAllRequest">
+            <summary>
+            获取所有实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheByPointIdRequeest.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheGetByConditonRequest">
+            <summary>
+            根据条件获取实时信息缓存RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheGetByConditonRequest.Predicate">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheUpdatePropertiesRequest">
+            <summary>
+            部分更新信息RPC
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheUpdatePropertiesRequest.Id">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PersonCache.RPrealCacheUpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PersonCache.RPrealCacheBatchUpdatePropertiesRequest">
+            <summary>
+            批量 部分更新测点信息请求
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Driver.DriverManualCrossControlReLoadRequest">
+            <summary>
+            加载手动控制信息至分站链表RPC
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.FactorValue.FactorValueGetRequest">
+            <summary>
+            参数值获取请求
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.FactorValue.FactorValueGetRequest.PointId">
+            <summary>
+            测点编号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Jc_B.AlarmRecordGetByStimeRequest.Stime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Jc_B.AlarmRecordGetByStimeRequest.ETime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.BatteryControlItem.controlType">
+            <summary>
+            0不进行操作，1取消维护性放电，2维护性放电 
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.PointDefine.StationDControlRequest.controlItems">
+            <summary>
+            控制链表
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.PointDefine.SwichControlItem.controlType">
+            <summary>
+            =0表示无动作，=1表示远程放电。
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.PointDefine.StationControlItem.controlType">
+            <summary>
+            0不进行操作，1取消维护性放电，2维护性放电
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.PointDefine.GetHistoryControlRequest.controlItems">
+            <summary>
+            控制链表
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.PointDefine.HistoryRealDataRequest.controlItems">
+            <summary>
+            控制链表
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.PointDefine.DeviceInfoRequestItem.controlType">
+            <summary>
+            =0表示无动作（取消获取），=1表示开始获取。
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.PointDefine.DeviceInfoRequestItem.GetAddressLst">
+            <summary>
+            表示需要获取设备的地址列表=0表示1号地址的传感器，分站默认都需要回发
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.DeviceInfoRequestItem.Fzh">
+            <summary>
+            分站号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.DeviceAddressModificationItem.DeviceAddressItem">
+            <summary>
+            修改传感器地址列表，一次性仅能修改1个设备，链表是便于后续扩展
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.Type">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.Location">
+            <summary>
+            安装位置
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.OnlyCoding">
+            <summary>
+            唯一编码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.TimeNow">
+            <summary>
+            当前时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.ProductionTime">
+            <summary>
+            生产时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.Voltage">
+            <summary>
+            入口电压
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.RestartNum">
+            <summary>
+            重启次数
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.GetSubstationBasicInfoResponse.InferiorInfo">
+            <summary>
+            下级设备基础信息
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.PointDefine.InferiorBasicInfo">
+            <summary>
+            基础信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.PointOrAddr">
+            <summary>
+            测点号或地址号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.Type">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.Location">
+            <summary>
+            安装位置
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.OnlyCoding">
+            <summary>
+            唯一编码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.TimeNow">
+            <summary>
+            当前时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.ProductionTime">
+            <summary>
+            生产时间
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.Voltage">
+            <summary>
+            入口电压
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.RestartNum">
+            <summary>
+            重启次数
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.PointDefine.InferiorBasicInfo.AlarmNum">
+            <summary>
+            报警次数
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.ManualCrossControl.GetAllManualCrossControlDetailResponse.ZkPointText">
+            <summary>
+            主控测点显示值
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.ManualCrossControl.GetAllManualCrossControlDetailResponse.BkPointText">
+            <summary>
+            被控测点显示值
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.NetworkModule.SearchNetworkModuleRequest.StationFind">
+            <summary>
+            用于是否指定获取分站的网络信息20181101  =1表示搜索分站，=0表示搜索交换机
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.NetworkModule.NetworkModuleCacheUpdatePropertiesRequest">
+            <summary>
+            部分更新MAC信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.NetworkModule.NetworkModuleCacheUpdatePropertiesRequest.Mac">
+            <summary>
+            Key
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.NetworkModule.NetworkModuleCacheUpdatePropertiesRequest.UpdateItems">
+            <summary>
+            更新信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.updateBufferItems">
+            <summary>
+            下发文件Buffer
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.updatetTypeid">
+            <summary>
+            设备类型编码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.updateHardVersion">
+            <summary>
+            硬件编码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.updateFileVersion">
+            <summary>
+            升级文件版本号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.updateMaxVersion">
+            <summary>
+            版本上限
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.updateMinVersion">
+            <summary>
+            版本下限
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.updateCount">
+            <summary>
+            升级文件总片数
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StationUpdate.LoadUpdateBufferRequest.crcValue">
+            <summary>
+            CRC值
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.StationUpdate.UpdateOrderForUserRequest.order">
+            <summary>
+            客户端传递过来的命令
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Request.StationUpdate.UpdateOrderForUserRequest.fzh">
+            <summary>
+            分站号
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.JC_Largedataanalysislog.LargedataAnalysisLogGetByAnalysisModelIdRequest.AnalysisModelId">
+            <summary>
+            分析模型Id
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.JC_Largedataanalysislog.LargedataAnalysisLogGetListByModelIdAndTimeRequest.AnalysisModelId">
+            <summary>
+            分析模型Id
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.JC_Largedataanalysislog.LargedataAnalysisLogGetListByModelIdAndTimeRequest.AnalysisDate">
+            <summary>
+            分析日志日期
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Calibration.GetCalibrationDetailRequest">
+            <summary>
+            获取获取标校详情Request
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Calibration.GetCalibrationDetailRequest.Time">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Calibration.GetCalibrationStatisticsRequest">
+            <summary>
+            获取标校统计Request
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Calibration.GetCalibrationStatisticsRequest.Time">
+            <summary>
+            标校时间
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.Operatelog.OperatelogAddListRequest">
+            <summary>
+            批量添加
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.RealMessage.RemoteUpdateStrtOrStopRequest.Type">
+            <summary>
+            升级0、结束升级1
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.RealMessage.GetFZJXControlRequest.Fzh">
+            <summary>
+            分站号
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.RegionOutageConfig.ReleaseControlCheckRequest">
+            <summary>
+            检查分析模型配置的控制点是否存在解控的请求对象
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Roleright.RolerightForRoleAssignmentRightRequest.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.Roleright.RolerightForRoleAssignmentRightRequest.lstRightID">
+            <summary>
+            权限列表
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Request.JC_Setanalysismodelpointrecord.SetAnalysisModelPointRecordGetTempleteRequest">
+            <summary>
+            通过模板Id, 获取设置表达式测点的模板
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.JC_Setanalysismodelpointrecord.SetAnalysisModelPointRecordGetTempleteRequest.TemplateId">
+            <summary>
+            模板Id
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionControlHistoryData.GetStaionControlHistoryDataByByFzhTimeResponse.TypeName">
+            <summary>
+            设备性质名称
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionControlHistoryData.GetStaionControlHistoryDataByByFzhTimeResponse.Location">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionControlHistoryData.GetStaionControlHistoryDataByByFzhTimeResponse.StateName">
+            <summary>
+            设备状态名称
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionControlHistoryData.GetStaionControlHistoryDataByByFzhTimeResponse.ControlDeviceConvert">
+            <summary>
+            控制量执行情况(2进制字符串)
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionHistoryData.GetSubstationHistoryRealDataByFzhTimeResponse.TypeName">
+            <summary>
+            设备性质名称
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionHistoryData.GetSubstationHistoryRealDataByFzhTimeResponse.Location">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionHistoryData.GetSubstationHistoryRealDataByFzhTimeResponse.StateName">
+            <summary>
+            设备状态名称
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.StaionHistoryData.GetSubstationHistoryRealDataByFzhTimeResponse.DeviceTypeName">
+            <summary>
+            设备型号名称
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.SysEmergencyLinkageInfo">
+            <summary>
+            应急联动配置信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.EmergencyLinkageMasterAreaAssInfo">
+            <summary>
+            应急联动主控区域信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.EmergencyLinkageMasterDevTypeAssInfo">
+            <summary>
+            应急联动主控设备类型信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.EmergencyLinkageMasterPointAssInfo">
+            <summary>
+            应急联动主控测点信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.EmergencyLinkageMasterTriDataStateAssInfo">
+            <summary>
+            应急联动主控触发数据状态信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.EmergencyLinkagePassiveAreaAssInfo">
+            <summary>
+            应急联动被控区域信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.EmergencyLinkagePassivePersonAssInfo">
+            <summary>
+            应急联动被控人员信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.AddEmergencylinkageconfigMasterInfoPassiveInfoRequest.EmergencyLinkagePassivePointAssInfo">
+            <summary>
+            应急联动被控测点信息
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.Id">
+            <summary>应急联动ID
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.Name">
+            <summary>应急联动名称
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.Type">
+            <summary>联动类型（1：普通联动，2:大数据分析联动）
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.TypeName">
+            <summary>联动类型名称
+            
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.Duration">
+            <summary>持续时长
+            
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterPointAssId">
+            <summary>主控测点关联id
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterPointNum">
+            <summary>主控测点数量
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterDevTypeAssId">
+            <summary>主控设备类型关联id
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterDevTypeNum">
+            <summary>主控设备类型数量
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterAreaAssId">
+            <summary>主控区域关联id
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterAreaNum">
+            <summary>主控区域数量
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterTriDataStateAssId">
+            <summary>主控触发数据状态关联id
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterTriDataStateNum">
+            <summary>主控触发数据状态数量
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.MasterModelName">
+            <summary>主控模型名称
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.PassivePointAssId">
+            <summary>被控测点关联id
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.PassivePointNum">
+            <summary>被控测点数量
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.PassiveAreaAssId">
+            <summary>被控区域关联id
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.PassiveAreaNum">
+            <summary>被控区域数量
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.PassivePersonAssId">
+            <summary>被控人员关联id
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.PassivePersonNum">
+            <summary>被控人员数量
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.EditPerson">
+            <summary>编辑人
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.EditTime">
+            <summary>编辑时间
+                
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.DeletePerson">
+            <summary>删除人
+            
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.SysEmergencyLinkage.GetSysEmergencyLinkageListAndStatisticsResponse.DeleteTime">
+            <summary>删除时间
+            
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.User.UserMenusGetRequest.userCode">
+            <summary>
+            用户编码
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.User.UserMenusGetRequest.MenuType">
+            <summary>
+            菜单类型（0：标准菜单，1：AQ菜单）
+            </summary>
+        </member>
+        <member name="P:Sys.Safety.Request.User.UserRightsGetRequest.userCode">
+            <summary>
+            用户编码
+            </summary>
+        </member>
+    </members>
+</doc>

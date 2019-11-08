@@ -1,0 +1,1400 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sys.Safety.Enums</name>
+    </assembly>
+    <members>
+        <member name="F:Sys.Safety.Enums.Constant.LinkageConstant.TriggerDataStateVlaue">
+            <summary>应急联动触发数据类型值
+            
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.ControlState">
+            <summary>
+            馈电异常状态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlState.DataPowerOnSuccess">
+            <summary>
+            复电成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlState.DataPowerOnFail">
+            <summary>
+            复电失败
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlState.DataPowerOffSuccess">
+            <summary>
+            断电成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlState.DataPowerOffFail">
+            <summary>
+            断电失败
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlState.DataPowerUnKnowm">
+            <summary>
+            断电状态未知
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.ControlType">
+            <summary>
+            控制类型（0~50表示对应的控制记录要加载到分站设备的控制链表中进行控制；51~100表示特殊控制命令，记录加载到对应的不同字段中）
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.NoControl">
+            <summary>
+            不控制，ControlType的默认值
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.LocalControl">
+            <summary>
+            手动控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.RemoteControl">
+            <summary>
+            交叉控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.LogicControl">
+            <summary>
+            逻辑控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.ControlState0">
+            <summary>
+            0态控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.ControlState1">
+            <summary>
+            1态控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.ControlState2">
+            <summary>
+            2态控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.Controlhand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.ControlPowerOff">
+            <summary>
+            模拟量：断电控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.ControlLineDown">
+            <summary>
+            模拟量：断线控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.ControlErro">
+            <summary>
+            模拟量：故障控制
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.LargeDataAnalyticsAreaPowerOff">
+            <summary>
+            大数据分析区域断电  20170613
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.LargeDataAnalyticsSensorAlarmControl">
+            <summary>
+            大数据分析区域断电  20170613
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.RemoveLocalControl">
+            <summary>
+            强制解控
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.ControlDisCharge">
+            <summary>
+            分站放电 xuzp20151015
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.GasThreeUnlockControl">
+            <summary>
+            瓦电3分强制解锁
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.ControlType.StationHisDataClear">
+            <summary>
+            分站历史数据清除
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.DeviceRunState">
+            <summary>
+            设备运行状态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentInterrupted">
+            <summary>
+            通讯中断
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentBiterror">
+            <summary>
+            通讯误码
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentIniting">
+            <summary>
+            初始化中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentAC">
+            <summary>
+            交流正常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentDC">
+            <summary>
+            直流正常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentInfrareding">
+            <summary>
+            红外遥控
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentSleep">
+            <summary>
+            休眠
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentDebugging">
+            <summary>
+            设备检修
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentDown">
+            <summary>
+            断线
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentCommOK">
+            <summary>
+            设备正常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentOverrange">
+            <summary>
+            上溢
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentUnderrange">
+            <summary>
+            负漂
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentAdjusting">
+            <summary>
+            标校
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.DataDerailState0">
+            <summary>
+            开关量0态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentStart">
+            <summary>
+            开机
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentHeadDown">
+            <summary>
+            头子断线
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentTypeError">
+            <summary>
+            类型有误
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.SystemExsit">
+            <summary>
+            系统退出
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.SystemStart">
+            <summary>
+            系统启动
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.SystemExsitFF">
+            <summary>
+            非法退出
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.DataFilter">
+            <summary>
+            过滤数据
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.DataCurLog">
+            <summary>
+            热备日志
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentChange">
+            <summary>
+            线性突变
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentControlDown">
+            <summary>
+            控制量断线
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.EquipmentStateUnknow">
+            <summary>
+            设备状态未知(历史表中不会出现该状态，用于实时显示部分表示对应分站通讯中断后传感器的状态)
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.SensorPowerAlarm">
+             <summary>
+            传感器电量过低
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.UnderVoltageAlarm">
+             <summary>
+            传感器电压过低
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.SensorChangeing">
+             <summary>
+            传感器更换中
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceRunState.Deleted">
+            <summary>
+            删除  
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.Enums.EnableState">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.EnableState.Yes">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.EnableState.No">
+            <summary>
+            停用
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.Enums.DevPropertype">
+            <summary>
+            设备性质枚举
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Substation">
+            <summary>
+            分站/基站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Analog">
+            <summary>
+            模拟量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Derail">
+            <summary>
+            开关量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Control">
+            <summary>
+            控制量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Accumulation">
+            <summary>
+            累积量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Export">
+            <summary>
+            导出量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.RoadLamp">
+            <summary>
+            路灯
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Area">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Strings">
+            <summary>
+            字符串
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Statistics">
+            <summary>
+            统计量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Statiskd">
+            <summary>
+            馈电量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.PowerStation">
+            <summary>
+            电源箱
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Switches">
+            <summary>
+            交换机
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DevPropertype.Intelligence">
+            <summary>
+            智能量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.VideoVendorType.HK">
+            <summary>
+            海康
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.VideoVendorType.DH">
+            <summary>
+            大华
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.VideoVendorType.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.EnumTypeEnum">
+            <summary>
+            作者:
+            时间:2017-05-24
+            描述:枚举类型枚举
+            修改记录
+            2017-05-24
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.DeviceProperty">
+            <summary>
+            设备性质
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.DeviceClass">
+            <summary>
+            设备种类
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.DeviceType">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.DataState">
+            <summary>
+            数据状态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.OperateLog">
+            <summary>
+            操作日志
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.ConfigType">
+            <summary>
+            配置类型
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.DriverType">
+            <summary>
+            驱动类型
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.DeviceState">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.Title">
+            <summary>
+            职务
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.EnumTypeEnum.WorkType">
+            <summary>
+            工种
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.Enums.EnumExtensions.GetEnumKeyPairValue``1(System.Object)">
+            <summary>
+            枚举扩展方法：获取枚举的key value对组，T只能为枚举类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.Enums.EnumExtensions.GetEnumDescription(System.Object)">
+            <summary>
+            枚举扩展方法：根据枚举值获取枚举描述 enumValue为实际枚举的值
+            </summary>
+            <param name="obj"></param>
+            <param name="enumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.Enums.EnumHelper.GetEnumKeyPairValue``1">
+            <summary>
+            获取枚举的key value对组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.Enums.EnumHelper.GetEnumDescription(System.Object)">
+            <summary>
+            根据枚举值获取枚举描述
+            </summary>
+            <param name="enumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.Enums.Enums.DeleteState">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DeleteState.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DeleteState.No">
+            <summary>
+            否
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Enums.DeleteState.Yes">
+            <summary>
+            是
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.DeviceProperty">
+            <summary>
+            设备性质枚举
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Substation">
+            <summary>
+            分站/基站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Analog">
+            <summary>
+            模拟量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Derail">
+            <summary>
+            开关量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Control">
+            <summary>
+            控制量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Accumulation">
+            <summary>
+            累积量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Export">
+            <summary>
+            导出量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Recognizer">
+            <summary>
+            路灯
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Area">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Strings">
+            <summary>
+            字符串
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Statistics">
+            <summary>
+            统计量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Statiskd">
+            <summary>
+            馈电量
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.PowerStation">
+            <summary>
+            电源箱
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Switches">
+            <summary>
+            交换机
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceProperty.Intelligence">
+            <summary>
+            智能量
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.Enums.DeviceDataState">
+            <summary>
+            设备数据状态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentInterrupted">
+            <summary>
+            通讯中断
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentBiterror">
+            <summary>
+            通讯误码
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentIniting">
+            <summary>
+            初始化中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentAC">
+            <summary>
+            交流正常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentDC">
+            <summary>
+            直流正常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentInfrareding">
+            <summary>
+            红外遥控
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentSleep">
+            <summary>
+            休眠
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentDebugging">
+            <summary>
+            设备检修
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataHighPreAlarm">
+            <summary>
+            上限预警
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataHighPreAlarmRemove">
+            <summary>
+            上限预警解除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataHighAlarm">
+            <summary>
+            上限报警
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataHighAlarmRemove">
+            <summary>
+            上限报警解除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataHighAlarmPowerOFF">
+            <summary>
+            上限断电
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataHighAlarmPowerOFFRemove">
+            <summary>
+            上限断电解除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataLowPreAlarm">
+            <summary>
+            下限预警
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataLowPreAlarmRemove">
+            <summary>
+            下限预警解除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataLowAlarm">
+            <summary>
+            下限报警
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataLowAlarmRemove">
+            <summary>
+            下限报警解除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataLowPower">
+            <summary>
+            下限断电
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataLowPowerRemove">
+            <summary>
+            下限断电解除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentDown">
+            <summary>
+            断线
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentCommOK">
+            <summary>
+            设备正常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentOverrange">
+            <summary>
+            上溢
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentUnderrange">
+            <summary>
+            负漂
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentAdjusting">
+            <summary>
+            标校
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataDerailState0">
+            <summary>
+            开关量0态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataDerailState1">
+            <summary>
+            开关量1态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataDerailState2">
+            <summary>
+            开关量2态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentStart">
+            <summary>
+            开机
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataPowerOnSuc">
+            <summary>
+            复电成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataPowerOnFail">
+            <summary>
+            复电失败
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataPowerOffSuc">
+            <summary>
+            断电成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataPowerOffFail">
+            <summary>
+            断电失败
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentHeadDown">
+            <summary>
+            头子断线
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentTypeError">
+            <summary>
+            类型有误
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.SystemExsit">
+            <summary>
+            系统退出
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.SystemStart">
+            <summary>
+            系统启动
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.SystemExsitFF">
+            <summary>
+            非法退出
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataFilter">
+            <summary>
+            过滤数据
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataCurLog">
+            <summary>
+            热备日志
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataSatisfyCon">
+            <summary>
+            满足条件
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataMissCon">
+            <summary>
+            不满足条件
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentChange">
+            <summary>
+            线性突变
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataControlState0">
+             <summary>
+            控制量0态
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.DataControlState1">
+            <summary>
+            控制量1态
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentControlDown">
+            <summary>
+            控制量断线
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.EquipmentStateUnknow">
+            <summary>
+            设备状态未知(历史表中不会出现该状态，用于实时显示部分表示对应分站通讯中断后传感器的状态)
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.RecognizerAlarm">
+            <summary>
+            人员识别器-报警状态（用于图形显示）
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastInCall">
+            <summary>
+            广播电话-通话中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastInRadio">
+             <summary>
+            广播电话-广播中
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastMusicPlay">
+             <summary>
+            广播电话-音乐播放中
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastFree">
+             <summary>
+            广播电话-空闲
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastPicking">
+             <summary>
+            广播电话-摘机
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastCalling">
+             <summary>
+            广播电话-呼叫
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastRinging">
+             <summary>
+            广播电话-振铃
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastBackBell">
+             <summary>
+            广播电话-回铃
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.BroadCastKeep">
+             <summary>
+            广播电话-通话保持
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.SensorPowerAlarm">
+             <summary>
+            传感器电量过低
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.UnderVoltageAlarm">
+             <summary>
+            传感器电压过低
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.SensorChangeing">
+             <summary>
+            传感器更换中
+             </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.DeviceDataState.OutSevice">
+            <summary>
+            与服务器连接中断
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.nomal">
+            <summary>
+            不报警
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PointTimeout">
+            <summary>
+            定点超时
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PersonInWellTimeout">
+            <summary>
+            入井超时
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PersonUnAccess">
+            <summary>
+            禁止进入
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PersonBanAccess">
+            <summary>
+            限制进入
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PointOverCount">
+            <summary>
+            定点超员
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.InWellOverCount">
+            <summary>
+            入井超员
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.WorkAbnormal">
+            <summary>
+            工作异常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.AlarmRemove">
+            <summary>
+            报警解除
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PowerUnderVoltage">
+            <summary>
+            电池欠压
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.AreaTimeout">
+            <summary>
+            区域超时
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.AreaOverCount">
+            <summary>
+            区域超员
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.AreaBanAccess">
+            <summary>
+            区域限制进入
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.AreaUnAccess">
+            <summary>
+            区域禁止进入
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.AreaWorkAbnormal">
+            <summary>
+            区域工作异常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PersonCall">
+            <summary>
+            井下呼叫
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PersonOutJob">
+            <summary>
+            人员脱岗报警
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PersonAlarmState.PersonNotInWellOutJob">
+            <summary>
+            未下井脱岗报警
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.Enums.PersonAlarmStateControl.AddNewState(System.Int32,Sys.Safety.Enums.PersonAlarmState)">
+            <summary>
+            添加状态位
+            </summary>
+            <param name="oldState">原状态</param>
+            <param name="newState">待添加的状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.Enums.PersonAlarmStateControl.DeleteOldState(System.Int32,Sys.Safety.Enums.PersonAlarmState)">
+            <summary>
+            删除状态位
+            </summary>
+            <param name="oldState">原状态</param>
+            <param name="newState">待删除的状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.Enums.PersonAlarmStateControl.GetPersonAlarmDescription(System.Int32)">
+            <summary>
+            获取当前人员状态的报警描述
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.NomalData">
+            <summary>
+            未定义
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.DelayData">
+            <summary>
+            补传采集
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.UserEditData">
+            <summary>
+            人工编辑
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.NomalInWellData">
+            <summary>
+            正常入井
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.DelayInWellData">
+            <summary>
+            补传入井
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.UserInWellData">
+            <summary>
+            补传入井
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.NomalOutWellData">
+            <summary>
+            正常出井
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.DelayOutWellData">
+            <summary>
+            补传出井
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.PresonTrajectoryFlag.UserOutWellData">
+            <summary>
+            人工编辑出井
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.Undefine">
+            <summary>
+            未定义
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.InWellNomalStation">
+            <summary>
+            井下普通站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.InWellInStation">
+            <summary>
+            井下入口站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.InWellOutStation">
+            <summary>
+            井下出口站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.InWellInOutStation">
+            <summary>
+            井下出入站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.GroundNomalStation">
+            <summary>
+            地面普通站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.GroundInStation">
+            <summary>
+            地面入口站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.GroundOutStation">
+            <summary>
+            地面出口站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.GroundInOutStation">
+            <summary>
+            地面出入站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.AttendanceInStation">
+            <summary>
+            考勤机入口站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.AttendanceOutStation">
+            <summary>
+            考勤机出口站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.Recognizer.AttendanceInOutStation">
+            <summary>
+            考勤机出入站
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.unKnowm">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.requesting">
+            <summary>
+            请求升级中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.requestSuccess">
+            <summary>
+            请求升级成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.requestFailure">
+            <summary>
+            请求升级失败
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.waitingFile">
+            <summary>
+            等待文件下发
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.recivingFile">
+            <summary>
+            文件接收中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.reciveComplete">
+            <summary>
+            文件接收完成
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.restart">
+            <summary>
+            重启升级中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.restartSuccess">
+            <summary>
+            重启升级成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.updateComplete">
+            <summary>
+            升级完成
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.updateCancle">
+            <summary>
+            取消升级中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.updateCancleSuccess">
+            <summary>
+            取消升级成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.updateCancleFailure">
+            <summary>
+            取消升级失败
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.restore">
+            <summary>
+            恢复备份中
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.restoreSuccess">
+            <summary>
+            恢复备份成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.getVersion">
+            <summary>
+            获取版本信息
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.getVersionSuccess">
+            <summary>
+            获取版本信息成功
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.reiciveCheck">
+            <summary>
+            巡检接收情况
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.replacement">
+            <summary>
+            补发
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.fileMissing">
+            <summary>
+            升级文件缺失
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.normal">
+            <summary>
+            分站状态正常
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.StationUpdateState.replacComplete">
+            <summary>
+            补发完成
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Gas">
+            <summary>
+            燃气系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Sewer">
+            <summary>
+            下水道系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.ManholeCover">
+            <summary>
+            井盖系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.PoliceVideo">
+            <summary>
+            公安视频箱系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.WaterQuality">
+            <summary>
+            水质公共卫生系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.RoadLamp">
+            <summary>
+            路灯监控系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.ElectricPower">
+            <summary>
+            电力管网系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Elevator">
+            <summary>
+            电梯系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Security">
+            <summary>
+            安全监控系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.GasExtraction">
+            <summary>
+            瓦斯抽采系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Personnel">
+            <summary>
+            人员定位系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Broadcast">
+            <summary>
+            语音扩播系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Dust">
+            <summary>
+            降尘系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.AirQuality">
+            <summary>
+            空气质量监测
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Noise">
+            <summary>
+            区域环境噪声监测
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Atmospheric">
+            <summary>
+            大气环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.SurfaceWater">
+            <summary>
+            地表水体环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.UndergroundWater">
+            <summary>
+            地下水体环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.MarineEnvironment">
+            <summary>
+            海洋环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.SoilEnvironment">
+            <summary>
+            土壤环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.SoundEnvironment">
+            <summary>
+            声环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.VibrationEnvironment">
+            <summary>
+            振动环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.RadioactiveEnvironment">
+            <summary>
+            放射性环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.ElectromagneticEnvironment">
+            <summary>
+            电磁环境污染源
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Structure">
+            <summary>
+            结构监测系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Environmental">
+            <summary>
+            环境监测系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.AffiliatedFacilities">
+            <summary>
+            附属设施监测系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Video">
+            <summary>
+            视频监控系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.IntrusionAlarm">
+            <summary>
+            入侵报警系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Communication">
+            <summary>
+            通信系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.Patrolling">
+            <summary>
+            巡更系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.FireAlarm">
+            <summary>
+            火灾报警系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.GasAlarm">
+            <summary>
+            可燃气体报警系统
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.ComprehensiveUtility">
+            <summary>
+            综合管廊监管平台
+            </summary>
+        </member>
+        <member name="F:Sys.Safety.Enums.SystemEnum.WaterOperationManagement">
+            <summary>
+            水务运营管理平台
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1533 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sys.Safety.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Sys.Safety.WebApi.AlarmModule.RatioAlarmServiceController">
+            <summary>
+            2017.7.27 by
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.WebApi.App.KJ73NAppController">
+            <summary>
+            KJ73NApp API接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetRealData(Sys.Safety.Request.App.RealDataRequest)">
+            <summary>
+            获取实时数据
+            </summary>
+            <param name="realDataRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetPointDetail(Sys.Safety.Request.App.RealDataGetDetialRequest)">
+            <summary>
+            获取测点详细信息
+            </summary>
+            <param name="realDataGetDetialRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetStationDetail(Sys.Safety.Request.App.RealDataGetDetialRequest)">
+            <summary>
+            获取分站详细信息
+            </summary>
+            <param name="realDataGetDetialRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetSwitcheObj(Sys.Safety.Request.App.SwitcheGetRequest)">
+            <summary>
+            获取交换机详细信息
+            </summary>
+            <param name="switheRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetNetworkModuleObj(Sys.Safety.Request.App.NetworkModuleAppGetRequest)">
+            <summary>
+            获取网络模块详细信息
+            </summary>
+            <param name="networkModuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.Logon(Sys.Safety.Request.App.LogonRequest)">
+            <summary>
+            登陆
+            </summary>
+            <param name="logonRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.ModfiyPassword(Sys.Safety.Request.App.ModifyUserPasswordRequest)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="modifyPasswordRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetBaseData(Basic.Framework.Web.BasicRequest)">
+            <summary>
+            获取基础数据
+            </summary>
+            <param name="basedataRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetMLLFiveLine(Sys.Safety.Request.App.ChartGetRequest)">
+            <summary>
+            获取模拟量曲线
+            </summary>
+            <param name="analoglineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetKGLFiveLine(Sys.Safety.Request.App.ChartGetRequest)">
+            <summary>
+            获取开关量曲线
+            </summary>
+            <param name="deraillineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetJCRData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询运行记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetJCMCData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询密采记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetMLLBJData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询模拟量报警记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetKGLBJData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询开关量报警记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetMLLDDData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询模拟量断电记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetKGLDDData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询开关量断电记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetAlarmRecordListByStime(Sys.Safety.Request.Jc_B.AlarmRecordGetByStimeRequest)">
+            <summary>
+            获取设备报警记录
+            </summary>
+            <param name="alarmRecordRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.EndAlarmRecord(Sys.Safety.Request.App.AlarmRecordEndRequest)">
+            <summary>
+            结束设备报警记录
+            </summary>
+            <param name="alarmRecordEndRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.GetAlarmHandleByStimeAndEtime(Sys.Safety.Request.AlarmHandle.AlarmHandelGetByStimeAndETime)">
+            <summary>
+            获取逻辑报警记录
+            </summary>
+            <param name="alarmHandelRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.KJ73NAppController.EndAlarmHandle(Sys.Safety.Request.App.AlarmHandleEndRequest)">
+            <summary>
+            结束逻辑报警记录
+            </summary>
+            <param name="alarmHandleEndRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.DeleteGraphicsbaseinfForGraphId(Sys.Safety.Request.Graphicsbaseinf.DeleteGraphicsbaseinfForGraphIdRequest)">
+            <summary>
+            删除图形
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetAllDeviceEnumcode">
+            <summary>
+            获取所有设备、数据状态枚举类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetAllGraphPoint(Sys.Safety.Request.Graphicsbaseinf.GetAllGraphPointRequest)">
+            <summary>
+            获取图形中的所有测点列表
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetDefPointInformation">
+            <summary>
+            获取测点信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetDefPointInformationInCache">
+            <summary>
+            在缓存中获取测点信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetGraphicsbaseinfByName(Sys.Safety.Request.Graphicsbaseinf.GetGraphicsbaseinfByNameRequest)">
+            <summary>
+            根据name获取图形
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetGraphicsbaseinfListByName(Sys.Safety.Request.Graphicsbaseinf.GetGraphicsbaseinfListByNameRequest)">
+            <summary>
+            根据图形名称获取图形
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetGraphicTimer(Sys.Safety.Request.Graphicsbaseinf.GetGraphicTimerRequest)">
+            <summary>
+            获取图形更新时间
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetMapPointsInfo(Sys.Safety.Request.Graphicsbaseinf.GetMapPointsInfoRequest)">
+            <summary>
+            获取图形中的所有测点列表
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetMapRoutesInfo(Sys.Safety.Request.Graphicsbaseinf.GetMapRoutesInfoRequest)">
+            <summary>
+            获取图形对应的线路信息
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetSaveFlag">
+            <summary>
+            获取图形更新标价
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetSwitchInformation">
+            <summary>
+            获取交换机信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetSwitchInformationInCache">
+            <summary>
+            在缓存中获取交换机信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.LoadAllpointDefByType(Sys.Safety.Request.Graphicsbaseinf.LoadAllpointDefByTypeRequest)">
+            <summary>
+            加载所有测点定义信息（含交换机）
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.SetSaveFlag(Sys.Safety.Request.Graphicsbaseinf.SetSaveFlagRequest)">
+            <summary>
+            设置图形标记
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.LoadGraphicsInfo">
+            <summary>
+            加载所有图形信息
+            </summary>        
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetAllPointInMap(Sys.Safety.Request.Graphicsbaseinf.GetAllPointInMapRequest)">
+            <summary>
+            获取图形上的所有测点信息
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetUserDefinedGraphicsByType(Sys.Safety.Request.Graphicsbaseinf.GetUserDefinedGraphicsByTypeRequest)">
+            <summary>
+            获取用户自定义图形
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetEmergencyLinkageGraphics">
+            <summary>
+            获取应急联动图形
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.UpdateEmergencyLinkageGraphics(Sys.Safety.Request.Graphicsbaseinf.UpdateEmergencyLinkageGraphicsRequest)">
+            <summary>
+            修改应急联动图形
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.GetSystemtDefaultGraphics(Sys.Safety.Request.Graphicsbaseinf.GetSystemtDefaultGraphicsRequest)">
+            <summary>
+            获取系统默认图形
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsbaseinfController.UpdateSystemDefaultGraphics(Sys.Safety.Request.Graphicsbaseinf.UpdateSystemDefaultGraphicsRequest)">
+            <summary>
+            修改系统默认图形
+            </summary>
+            <param name="graphicsbaseinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicspointsinfController.DeleteGraphicsPointsInfForGraphId(Sys.Safety.Request.Graphicspointsinf.DeleteGraphicsPointsInfForGraphIdRequest)">
+            <summary>
+            删除图形
+            </summary>
+            <param name="graphicspointsinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicspointsinfController.Get1GraphBindType(Sys.Safety.Request.Graphicspointsinf.Get1GraphBindTypeRequest)">
+            <summary>
+            根据测点名称获取测点的绑定类型
+            </summary>
+            <param name="graphicspointsinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicspointsinfController.GetGraphicspointsinfByPoint(Sys.Safety.Request.Graphicspointsinf.GetGraphicspointsinfByPointRequest)">
+            <summary>
+            根据测点名获取GraphicspointsinfInfo
+            </summary>
+            <param name="graphicspointsinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicspointsinfController.GetGraphicspointsinfByGraphIdAndPoint(Sys.Safety.Request.Graphicspointsinf.GetGraphicspointsinfByGraphIdAndPointRequest)">
+            <summary>
+            根据测点号及图形ID获取图形测点信息
+            </summary>
+            <param name="graphicspointsinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicspointsinfController.GetAllGraphicspointsinfInfo">
+            <summary>
+            获取图形上所有测点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.GraphicsrouteinfController.DeleteGraphicsrouteinfForGraphId(Sys.Safety.Request.Graphicsrouteinf.DeleteGraphicsrouteinfRequest)">
+            <summary>
+            删除图形绑定线路信息
+            </summary>
+            <param name="graphicsrouteinfrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.ManualCrossControlController.AddManualCrossControl(Sys.Safety.Request.ManualCrossControl.ManualCrossControlAddRequest)">
+            <summary>
+            添加手动/交叉控制
+            </summary>
+            <param name="ManualCrossControlRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.ManualCrossControlController.AddManualCrossControls(Sys.Safety.Request.ManualCrossControl.ManualCrossControlsRequest)">
+            <summary>
+            批量添加
+            </summary>
+            <param name="ManualCrossControlRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.AddDeviceDefine(Sys.Safety.Request.DeviceDefine.DeviceDefineAddRequest)">
+            <summary>
+            添加设备类型
+            </summary>
+            <param name="DeviceDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.AddDeviceDefines(Sys.Safety.Request.DeviceDefine.DeviceDefinesRequest)">
+            <summary>
+            批量添加
+            </summary>
+            <param name="DeviceDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.UpdateDeviceDefine(Sys.Safety.Request.DeviceDefine.DeviceDefineUpdateRequest)">
+            <summary>
+            更新设备类型
+            </summary>
+            <param name="DeviceDefinerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.UpdateDeviceDefines(Sys.Safety.Request.DeviceDefine.DeviceDefinesRequest)">
+            <summary>
+            批量更新
+            </summary>
+            <param name="DeviceDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.DeleteDeviceDefine(Sys.Safety.Request.DeviceDefine.DeviceDefineDeleteRequest)">
+            <summary>
+            删除设备类型
+            </summary>
+            <param name="DeviceDefinerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.GetAllDeviceDefineCache">
+            <summary>
+            获取所有设备类型缓存信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.GetDeviceDefineCacheByDevId(Sys.Safety.Request.DeviceDefine.DeviceDefineGetByDevIdRequest)">
+            <summary>
+            根据DevId获取设备类型
+            </summary>
+            <param name="DeviceDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.GetAllDeviceTypeCache">
+            <summary>
+            获取所有设备型号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.GetAllDeviceClassCache">
+            <summary>
+            获取所有设备种类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.GetAllDevicePropertyCache">
+            <summary>
+            获取所有设备性质
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.GetAllDriverInf">
+            <summary>
+            获取所有解析驱动信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.DeviceDefineController.GetMaxDeviceDefineId">
+            <summary>
+            获取当前最大的DevId
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PersonPointDefineController.AddPointDefine(Sys.Safety.Request.PointDefine.PointDefineAddRequest)">
+            <summary>
+             添加测点
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PersonPointDefineController.AddPointDefines(Sys.Safety.Request.PointDefine.PointDefinesAddRequest)">
+            <summary>
+            批量添加
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PersonPointDefineController.UpdatePointDefine(Sys.Safety.Request.PointDefine.PointDefineUpdateRequest)">
+            <summary>
+            更新测点
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PersonPointDefineController.UpdatePointDefines(Sys.Safety.Request.PointDefine.PointDefinesUpdateRequest)">
+            <summary>
+            批量更新
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PersonPointDefineController.UpdatePointDefinesCache(Sys.Safety.Request.PointDefine.PointDefinesUpdateRequest)">
+            <summary>
+            批量更新缓存
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PersonPointDefineController.AddUpdatePointDefineAndNetworkModuleCache(Sys.Safety.Request.PointDefine.PointDefineAddNetworkModuleAddUpdateRequest)">
+            <summary>
+            同时添加、更新定义及网络模拟绑定信息
+            </summary>
+            <param name="PointDefineAddNetworkModuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AllSystemPointDefineController.GetAllPointDefineCache">
+            <summary>
+            获取所有定义缓存数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AllSystemPointDefineController.GetPointDefineCacheByPoint(Sys.Safety.Request.PointDefine.PointDefineGetByPointRequest)">
+            <summary>
+            根据测点号查找缓存信息
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AllSystemPointDefineController.GetNetworkCommunicationStation">
+            <summary>
+            获取网络通信的分站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AllSystemPointDefineController.GetCOMCommunicationStation">
+            <summary>
+            获取串口通信的分站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AllSystemPointDefineController.GetNonCommunicationStation">
+            <summary>
+            获取未通信的分站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.App.PtQueryController">
+            <summary>
+            外部查询 API接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetRealData(Sys.Safety.Request.App.RealDataRequest)">
+            <summary>
+            获取实时数据
+            </summary>
+            <param name="realDataRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetPointDetail(Sys.Safety.Request.App.RealDataGetDetialRequest)">
+            <summary>
+            获取测点详细信息
+            </summary>
+            <param name="realDataGetDetialRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetStationDetail(Sys.Safety.Request.App.RealDataGetDetialRequest)">
+            <summary>
+            获取分站详细信息
+            </summary>
+            <param name="realDataGetDetialRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetSwitcheObj(Sys.Safety.Request.App.SwitcheGetRequest)">
+            <summary>
+            获取交换机详细信息
+            </summary>
+            <param name="switheRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetNetworkModuleObj(Sys.Safety.Request.App.NetworkModuleAppGetRequest)">
+            <summary>
+            获取网络模块详细信息
+            </summary>
+            <param name="networkModuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.Logon(Sys.Safety.Request.App.LogonRequest)">
+            <summary>
+            登陆
+            </summary>
+            <param name="logonRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.ModfiyPassword(Sys.Safety.Request.App.ModifyUserPasswordRequest)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="modifyPasswordRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetBaseData(Basic.Framework.Web.BasicRequest)">
+            <summary>
+            获取基础数据
+            </summary>
+            <param name="basedataRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetMLLFiveLine(Sys.Safety.Request.App.ChartGetRequest)">
+            <summary>
+            获取模拟量曲线
+            </summary>
+            <param name="analoglineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetKGLFiveLine(Sys.Safety.Request.App.ChartGetRequest)">
+            <summary>
+            获取开关量曲线
+            </summary>
+            <param name="deraillineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetKGLStateLine(Sys.Safety.Request.App.ChartGetRequest)">
+            <summary>
+            获取开关量柱状图
+            </summary>
+            <param name="deraillineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetMLLDayReport(Sys.Safety.Request.App.GetDayReportRequest)">
+            <summary>
+            获取模拟量日班报表
+            </summary>
+            <param name="analoglineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetJCRData(Sys.Safety.Request.App.PointRunLogGetRequest)">
+            <summary>
+            查询运行记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetJCMCData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询密采记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetMLLBJData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询模拟量报警记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetKGLBJData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询开关量报警记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetMLLDDData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询模拟量断电记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetKGLDDData(Sys.Safety.Request.App.RunLogGetRequest)">
+            <summary>
+            查询开关量断电记录
+            </summary>
+            <param name="runlogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetAlarmRecordListByStime(Sys.Safety.Request.Jc_B.AlarmRecordGetByStimeRequest)">
+            <summary>
+            获取设备报警记录
+            </summary>
+            <param name="alarmRecordRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.EndAlarmRecord(Sys.Safety.Request.App.AlarmRecordEndRequest)">
+            <summary>
+            结束设备报警记录
+            </summary>
+            <param name="alarmRecordEndRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetAlarmHandleByStimeAndEtime(Sys.Safety.Request.AlarmHandle.AlarmHandelGetByStimeAndETime)">
+            <summary>
+            获取逻辑报警记录
+            </summary>
+            <param name="alarmHandelRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.EndAlarmHandle(Sys.Safety.Request.App.AlarmHandleEndRequest)">
+            <summary>
+            结束逻辑报警记录
+            </summary>
+            <param name="alarmHandleEndRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.App.PtQueryController.GetAllPointDefineData">
+            <summary>
+            获取所有测点定义信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.StationUpdateController.GetStationItem(Sys.Safety.Request.StationUpdate.GetStationItemRequest)">
+            <summary>
+            
+            </summary>
+            <param name="getStationItemRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.AddPointDefine(Sys.Safety.Request.PointDefine.PointDefineAddRequest)">
+            <summary>
+             添加测点
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.AddPointDefines(Sys.Safety.Request.PointDefine.PointDefinesAddRequest)">
+            <summary>
+            批量添加
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.UpdatePointDefine(Sys.Safety.Request.PointDefine.PointDefineUpdateRequest)">
+            <summary>
+            更新测点
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.UpdatePointDefines(Sys.Safety.Request.PointDefine.PointDefinesUpdateRequest)">
+            <summary>
+            批量更新
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.UpdatePointDefinesCache(Sys.Safety.Request.PointDefine.PointDefinesUpdateRequest)">
+            <summary>
+            批量更新缓存
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.AddUpdatePointDefineAndNetworkModuleCache(Sys.Safety.Request.PointDefine.PointDefineAddNetworkModuleAddUpdateRequest)">
+            <summary>
+            同时添加、更新定义及网络模拟绑定信息
+            </summary>
+            <param name="PointDefineAddNetworkModuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.GetAllPointDefineCache">
+            <summary>
+            获取所有定义缓存数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.GetPointDefineCacheByPoint(Sys.Safety.Request.PointDefine.PointDefineGetByPointRequest)">
+            <summary>
+            根据测点号查找缓存信息
+            </summary>
+            <param name="PointDefineRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.GetNetworkCommunicationStation">
+            <summary>
+            获取网络通信的分站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.GetCOMCommunicationStation">
+            <summary>
+            获取串口通信的分站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.GetNonCommunicationStation">
+            <summary>
+            获取未通信的分站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PointDefineController.PointDefineSaveData">
+            <summary>
+            测点定义保存巡检操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetAlarmTypeDataByProperty(Sys.Safety.Request.Alarm.GetAlarmTypeDataByPropertyRequest)">
+            <summary>
+            根据设备性质来获取设备性质对应的状态类型
+            </summary>
+            <param name="alarmRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetClassByProperty(Sys.Safety.Request.Alarm.GetClassByPropertyRequest)">
+            <summary>
+            根据性质获取种类
+            </summary>
+            <param name="alarmRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetDataDefProperty">
+            <summary>
+            获取已定义设备中所有的性质
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetEnumcodeByEnumTypeId(Sys.Safety.Request.Alarm.GetEnumcodeByEnumTypeIdRequest)">
+            <summary>
+            根据EnumTypeId获取Enumcode
+            </summary>
+            <param name="alarmRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetListDef">
+            <summary>
+            从服务端内存获取设备定义列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetListEnumClass">
+            <summary>
+            从服务端内存结构中获取所有设备种类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetMaxId">
+             <summary>
+            获取最大Id
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetMaxTimeFromJCR">
+            <summary>
+            获取最大时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.GetPointByClass(Sys.Safety.Request.Alarm.GetPointByClassRequest)">
+            <summary>
+            根据种类获取测点
+            </summary>
+            <param name="alarmRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.QueryDevClassByDevpropertId(Sys.Safety.Request.Alarm.QueryDevClassByDevpropertRequest)">
+            <summary>
+            通过设备性质查找设备种类
+            </summary>
+            <param name="alarmRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.QueryPointByDevClassIDCache(Sys.Safety.Request.Alarm.QueryPointByDevClassRequest)">
+            <summary>
+            通过设备种类查找测点
+            </summary>
+            <param name="alarmRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.QueryPointByDevpropertIDCache(Sys.Safety.Request.Alarm.QueryPointByDevpropertRequest)">
+            <summary>
+            通过设备性质查找测点
+            </summary>
+            <param name="alarmRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.AlarmModule.AlarmServiceController.SaveConfigToDatabase(Sys.Safety.Request.Alarm.SaveConfigToDatabaseRequest)">
+             <summary>
+            保存配置文件到数据库
+             </summary>
+             <param name="alarmRequest"></param>
+             <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.SettingController">
+            <summary>
+            Setting配置管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.SettingController.SaveSetting(Sys.Safety.Request.Setting.SettingAddRequest)">
+            <summary>
+            保存配置信息
+            </summary>
+            <param name="settingrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.SettingController.GetSettingByKey(Sys.Safety.Request.Setting.GetSettingByKeyRequest)">
+            <summary>
+            根据strKey获取settinginfo
+            </summary>
+            <param name="settingrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.SettingController.SaveSettingForCondition(Sys.Safety.Request.Setting.SaveSettingForConditionRequest)">
+            <summary>
+            根据条件保存配置
+            </summary>
+            <param name="settingrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.SettingController.GetSettingListForCreator">
+            <summary>
+            根据条件保存配置
+            </summary>
+            <param name="settingrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.RunlogController">
+            <summary>
+            运行日志管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RunlogController.GetRunlogs">
+            <summary>
+            /// <summary>
+            获取系统所有运行日志
+            </summary>
+            <returns></returns>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RunlogController.GetRunlogs(Sys.Safety.Request.Runlog.RunlogGetByConditionsRequest)">
+            <summary>
+            根据查询条件获取运行日志记录
+            </summary>
+            <param name="runlogrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RunlogController.DeleteRunlogByEtime(Sys.Safety.Request.Runlog.RunlogDeleteByStimeEtimeRequest)">
+            <summary>
+            根据结束时间删除
+            </summary>
+            <param name="operatelogrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RunlogController.DeleteRunlogByStimeEtime(Sys.Safety.Request.Runlog.RunlogDeleteByStimeEtimeRequest)">
+            <summary>
+            根据开始时间结束时间删除指定时间段的数据
+            </summary>
+            <param name="operatelogrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.OperatelogController">
+            <summary>
+            操作日志管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.OperatelogController.GetOperateLogs">
+            <summary>
+            获取系统所有操作日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.OperatelogController.GetOperateLogs(Sys.Safety.Request.Operatelog.OperatelogGetByConditionsRequest)">
+            <summary>
+            根据查询条件获取操作日志记录
+            </summary>
+            <param name="operatelogrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.OperatelogController.AddOperatelogs(Sys.Safety.Request.Operatelog.OperatelogAddListRequest)">
+            <summary>
+            批量添加接口
+            </summary>
+            <param name="operatelogrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.OperatelogController.DeleteOperatelogByEtime(Sys.Safety.Request.Operatelog.OperatelogDeleteByStimeEtimeRequest)">
+            <summary>
+            根据结束时间删除
+            </summary>
+            <param name="operatelogrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.OperatelogController.DeleteOperatelogByStimeEtime(Sys.Safety.Request.Operatelog.OperatelogDeleteByStimeEtimeRequest)">
+            <summary>
+            根据开始时间结束时间删除指定时间段的数据
+            </summary>
+            <param name="operatelogrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.EnumtypeController">
+            <summary>
+            枚举类型管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.EnumtypeController.SaveEnumType(Sys.Safety.Request.Enumtype.EnumtypeAddRequest)">
+            <summary>
+            保存枚举类型
+            </summary>
+            <param name="enumtyperequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.EnumcodeController">
+            <summary>
+            枚举管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.EnumcodeController.SaveEnumCode(Sys.Safety.Request.Enumcode.EnumcodeAddRequest)">
+            <summary>
+            保存枚举
+            </summary>
+            <param name="enumcoderequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.EnumcodeController.UpdateCache">
+            <summary>
+            获取数据库数据并更新到服务端枚举缓存
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.WebApi.RemoteStateController">
+            <summary>
+            网关、远程机状态管理WebApi接口
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.WebApi.ConfigController">
+            <summary>
+            Config配置管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.ConfigController.GetDbState">
+            <summary>
+            获取数据状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.ConfigController.GetDatabaseDiskInfo">
+            <summary>
+            获取数据库磁盘信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.ConfigController.ExitServer">
+            <summary>
+            退出服务器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.UserController">
+            <summary>
+            用户管理 WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.GetUserList">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.GetUserByCode(Sys.Safety.Request.User.UserGetByCodeRequest)">
+            <summary>
+            根据用户编码获取用户信息
+            </summary>
+            <param name="userrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.GetEnableUser">
+            <summary>
+            获取已启用的用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.AddUserEx(Sys.Safety.Request.User.UserAddRequest)">
+            <summary>
+            添加一个全新信息到用户表并返回成功后的用户对象(支持添加和更新操作)
+            </summary>
+            <param name="userrequest"></param>
+            <returns></returns>      
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.GetUserMenus(Sys.Safety.Request.User.UserMenusGetRequest)">
+            <summary>
+            获取用户对应的菜单信息     
+            </summary>    
+            <returns>菜单列表</returns> 
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.GetUserRights(Sys.Safety.Request.User.UserRightsGetRequest)">
+            <summary>
+            获取用户对应的权限信息
+            </summary>
+            <param name="userrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.EnableUser(Sys.Safety.Request.User.UsersRequest)">
+            <summary>
+            启用用户
+            </summary>
+            <param name="userrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserController.DisableUser(Sys.Safety.Request.User.UsersRequest)">
+            <summary>
+            禁用用户
+            </summary>
+            <param name="userrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.UserroleController">
+            <summary>
+            用户与角色关联 WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserroleController.DeleteUserroleByRoleId(Sys.Safety.Request.Userrole.UserroleDeleteByRoleIdRequest)">
+            <summary>
+            根据角色ID删除用户与角色的关联关系
+            </summary>
+            <param name="userrolerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserroleController.DeleteUserroleByUserId(Sys.Safety.Request.Userrole.UserroleDeleteByUserIdRequest)">
+            <summary>
+            根据用户ID删除用户与角色的关联关系
+            </summary>
+            <param name="userrolerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserroleController.AddUserRoles(Sys.Safety.Request.Userrole.UserrolesAddRequest)">
+            <summary>
+            批量设置用户角色
+            注意此接口是先删除原有，再做新增操作
+            </summary>     
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserroleController.GetUserRoleByUserId(Sys.Safety.Request.Userrole.UserroleGetByUserIdRequest)">
+            <summary>
+            根据用户ID获取用户角色
+            </summary>
+            <param name="userrolerequest">用户ID</param>
+            <returns>用户角色列表</returns>     
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserroleController.CheckUserIDExist(Sys.Safety.Request.Userrole.UserroleGetCheckUserIDExistRequest)">
+            <summary>
+            判断该用户是否分配角色
+            </summary>
+            <param name="userrolerequest">用户编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserroleController.ForUserAssignmentRole(Sys.Safety.Request.Userrole.UserroleForUserAssignmentRoleRequest)">
+            <summary>
+            为用户分配角色
+            </summary> 
+        </member>
+        <member name="M:Sys.Safety.WebApi.UserroleController.GetRoleListByUserId(Sys.Safety.Request.Userrole.UserroleGetByUserIdRequest)">
+            <summary>
+            根据用户编号获取所有的该用户所拥有的角色对象
+            </summary>
+            <param name="userrolerequest">用户编号</param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.RoleController">
+            <summary>
+            角色管理 WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RoleController.DeleteRoles(Sys.Safety.Request.Role.RolesDeleteRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="rolerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RoleController.AddRoleEx(Sys.Safety.Request.Role.RoleAddRequest)">
+            <summary>
+            添加一个全新信息到角色表并返回成功后的角色对象(支持新增和更新)
+            </summary>
+            <param name="rolerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RoleController.EnableRole(Sys.Safety.Request.Role.RolesRequest)">
+            <summary>
+            启用角色
+            </summary>
+            <param name="rolerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RoleController.DisableRole(Sys.Safety.Request.Role.RolesRequest)">
+            <summary>
+            禁用角色
+            </summary>
+            <param name="rolerequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.RolerightController">
+            <summary>
+            角色与权限关联WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RolerightController.DeleteRolerightByRoleId(Sys.Safety.Request.Roleright.RolerightDeleteByRoleIdRequest)">
+            <summary>
+            根据角色ID删除角色权限
+            </summary>
+            <param name="rolerightrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RolerightController.DeleteRolerightByRightId(Sys.Safety.Request.Roleright.RolerightDeleteByRightIdRequest)">
+            <summary>
+            根据角色ID删除角色权限
+            </summary>
+            <param name="rolerightrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RolerightController.AddRoleRights(Sys.Safety.Request.Roleright.RolerightsAddRequest)">
+            <summary>
+            新增角色权限点
+            批量增加权限点，增加前会删除原来角色下的所有权限点
+            </summary>
+            <param name="rolerightrequest">角色编码,角色的权限点集合</param>      
+        </member>
+        <member name="M:Sys.Safety.WebApi.RolerightController.GetRightsByRoleId(Sys.Safety.Request.Roleright.RolerightGetByRoleIdRequest)">
+            <summary>
+            根据角色ID获取角色对应的权限信息
+            </summary>
+            <param name="rolerightrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RolerightController.GetRolerightByRoleId(Sys.Safety.Request.Roleright.RolerightGetByRoleIdRequest)">
+            <summary>
+            根据角色ID获取角色对应的权限关联信息
+            </summary>
+            <param name="rolerightrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RolerightController.CheckRoleIDExist(Sys.Safety.Request.Roleright.RolerightCheckExistByRoleIdRequest)">
+            <summary>
+            判断该角色是否分配权限
+            </summary>
+            <param name="rolerightrequest">角色编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RolerightController.ForRoleAssignmentRight(Sys.Safety.Request.Roleright.RolerightForRoleAssignmentRightRequest)">
+            <summary>
+            为角色分配权限
+            </summary>
+            <param name="rolerightrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.RightController">
+            <summary>
+            权限管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RightController.DeleteRights(Sys.Safety.Request.Right.RightsDeleteRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="rightrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RightController.AddRightEx(Sys.Safety.Request.Right.RightAddRequest)">
+            <summary>
+            添加一个全新信息到权限表并返回成功后的权限对象(支持添加、更新，根据状态来判断)
+            </summary>
+            <param name="rightrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.MenuController">
+            <summary>
+            菜单管理WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.MenuController.DeleteMenus(Sys.Safety.Request.Menu.MenusDeleteRequest)">
+            <summary>
+            批量删除
+            </summary>
+            <param name="menurequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.MenuController.GetMenuNameByMenuCode(Sys.Safety.Request.Menu.MenuGetByCOdeRequest)">
+            <summary>
+            根据菜单编码得到菜单名称
+            </summary>
+            <param name="menurequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.MenuController.AddMenuEx(Sys.Safety.Request.Menu.MenuAddRequest)">
+            <summary>
+            添加一个全新信息到菜单表并返回成功后的菜单对象(支持添加和更新)
+            </summary>
+            <param name="menurequest"></param>
+            <returns></returns>    
+        </member>
+        <member name="M:Sys.Safety.WebApi.MenuController.EnablMenu(Sys.Safety.Request.Menu.MenusUpdateRequest)">
+            <summary>
+            启用菜单
+            </summary>
+            <param name="lstMenuDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.MenuController.DisableMenu(Sys.Safety.Request.Menu.MenusUpdateRequest)">
+            <summary>
+            禁用菜单
+            </summary>
+            <param name="lstMenuDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sys.Safety.WebApi.LoginController">
+            <summary>
+            用户登录WebApi接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.LoginController.Login(Sys.Safety.Request.Login.LoginRequest)">
+            <summary>
+            用户登录接口
+            </summary>
+            <param name="loginrequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.LoginController.Logout(Sys.Safety.Request.Login.LoginOutRequest)">
+            <summary>
+            注销
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.LoginController.UserLogin(Sys.Safety.Request.Login.UserLoginRequest)">
+            <summary>
+            用户登陆（成功返回用户信息）
+            </summary>
+        </member>
+        <member name="T:Sys.Safety.WebApi.RequestController">
+            <summary>
+            请求库管理Api接口
+            </summary>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PositionController.AddPosition(Sys.Safety.Request.Position.PositionAddRequest)">
+             <summary>
+            添加安装位置
+             </summary>
+             <param name="PositionRequest"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PositionController.AddPositions(Sys.Safety.Request.Position.PositionsRequest)">
+            <summary>
+            批量添加
+            </summary>
+            <param name="PositionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PositionController.UpdatePosition(Sys.Safety.Request.Position.PositionUpdateRequest)">
+            <summary>
+            安装位置更新
+            </summary>
+            <param name="PositionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PositionController.UpdatePositions(Sys.Safety.Request.Position.PositionsRequest)">
+            <summary>
+            批量更新
+            </summary>
+            <param name="PositionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PositionController.GetAllPositionCache">
+            <summary>
+            获取所有安装位置缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.PositionController.GetMaxPositionId">
+            <summary>
+            获取缓存中当前最大的位置ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.CalibrationController.GetBxDetail(Sys.Safety.Request.Calibration.GetCalibrationDetailRequest)">
+            <summary>
+            获取标校详情
+            </summary>
+            <param name="calibrationRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.CalibrationController.GetBxStatistics(Sys.Safety.Request.Calibration.GetCalibrationStatisticsRequest)">
+            <summary>
+            获取标校统计详情
+            </summary>
+            <param name="calibrationRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetAlarmData">
+            <summary>
+            获取报警数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetAllPointinformation">
+            <summary>
+            获取所有测点信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetBindDianYuanFenzhan">
+            <summary>
+            获取所有绑定电源箱分站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetBindDianYuanMac">
+            <summary>
+            /获取所有绑定电源箱的交换机
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetBXPoint(Sys.Safety.Request.RealMessage.GetbxpointRequest)">
+            <summary>
+            根据时间获取测点
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetCustomPagePoint(Sys.Safety.Request.RealMessage.GetCustomPagePointRequest)">
+            <summary>
+            获取自定编排测点号
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetDefineChangeFlg">
+            <summary>
+            获取定义改变时间 判断定义是否改变
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetFZJXControl(Sys.Safety.Request.RealMessage.GetFZJXControlRequest)">
+            <summary>
+            获取分站交叉控制
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetFZPoint">
+            <summary>
+            获取分站测点号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetKZPoint">
+            <summary>
+            获取控制量测点号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetMaintenanceHistoryByPointId(Sys.Safety.Request.RealMessage.GetMaintenanceHistoryByPointIdRequst)">
+            <summary>
+            根据测点号获取历史维保记录
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetPoint(Sys.Safety.Request.RealMessage.GetPointRequest)">
+            <summary>
+            根据测点获取结构体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetRealCfgChangeFlg">
+            <summary>
+            获取显示配置改变时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetRealData(Sys.Safety.Request.RealMessage.GetRealDataRequest)">
+            <summary>
+            获取所有实时数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetRealMac">
+            <summary>
+            获取网络模块数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetRunLogs(Sys.Safety.Request.RealMessage.GetRunLogsRequest)">
+            <summary>
+            获取运行记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetTimeNow">
+            <summary>
+            获取服务端当前时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetZKPoint(Sys.Safety.Request.RealMessage.GetZKPointRequest)">
+            <summary>
+            根据测点号获取主控点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetZKPointex">
+            <summary>
+            获取主控点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.ReadConfig(Sys.Safety.Request.RealMessage.ReadConfigRequest)">
+            <summary>
+            读取配置信息到config表中
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.RemoteGetShowTb(Sys.Safety.Request.RealMessage.RemoteGetShowTbRequest)">
+            <summary>
+            TODO:目前没有弄懂这个方法的含义
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.RemoteUpdateStrtOrStop(Sys.Safety.Request.RealMessage.RemoteUpdateStrtOrStopRequest)">
+            <summary>
+            开始升级过程、或结束升级过程
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.RemoteUpgradeCommand(Sys.Safety.Request.RealMessage.RemoteUpgradeCommandRequest)">
+            <summary>
+            远程升级命令
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.SaveConfig(Sys.Safety.Request.RealMessage.SaveConfigRequest)">
+            <summary>
+            存储配置信息到config表
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.SaveCustomPagePoints(Sys.Safety.Request.RealMessage.SaveCustomPagePointsRequest)">
+            <summary>
+            存储自定义测点
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.SavePoint(Sys.Safety.Request.RealMessage.SavePointRequest)">
+            <summary>
+            保存测点
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.SetRealCfgChange">
+            <summary>
+            设置显示配置改变时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.UpdateAlarmStep(Sys.Safety.Request.RealMessage.UpdateAlarmStepRequest)">
+            <summary>
+            修改报警措施
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sys.Safety.WebApi.RealMessageController.GetRunRecordListByCounter(Sys.Safety.Request.RealMessage.GetRunRecordListByCounterRequest)">
+            <summary>
+            修改报警措施
+            </summary>
+            <param name="realMessageRequest"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
